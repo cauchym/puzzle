@@ -108,7 +108,7 @@ var calc=function(n){
 
 
 var main=function(){
-    var s=7;
+    var s=100;
     if(s==3){
         console.log(0)
     }else{
@@ -116,4 +116,8 @@ var main=function(){
     };
 };
 
-main();
+console.time('timer');
+for (var t=0;t<10;t++){
+  main();
+}
+console.timeEnd('timer');
